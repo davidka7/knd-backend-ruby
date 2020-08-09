@@ -18,12 +18,11 @@ kim = User.create(username: "kim", full_name: "Kim Possible", favorite_color: "l
 
 project = Project.create(background_image: "", topic: "Fun Project", user_id: david.id)
 project1 = Project.create(background_image: "", topic: "Boring Project", user_id: david.id)
-project2 = Project.create(background_image: "", topic: "Interesting Project", user_id: david.id)
 project3 = Project.create(background_image: "", topic: "Job Project", user_id: kim.id)
 
 board = Board.create(title: "favorite", project_id: project.id)
 board1 = Board.create(title: "I like icons", project_id: project.id)
-board2 = Board.create(title: "Work on Project", project_id: project3.id)
+
 board3 = Board.create(title: "Going to do", project_id: project3.id)
 
 card = Card.create(card_title: "dogs", image: '', content: "Playing with little dogs are my favorite, dont forget to take out ms. kims dogs every sunday evening.", board_id: board.id)
