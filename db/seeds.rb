@@ -16,14 +16,14 @@ Icon.destroy_all
 david = User.create(username: "david", full_name: "David Pepsi", favorite_color: "blue", email: "davidpepsi@go.edu", password: "123")
 kim = User.create(username: "kim", full_name: "Kim Possible", favorite_color: "light blue", email: "kim@uw.edu", password: "123")
 
-project = Project.create(background_image: "", topic: "Fun Project", user_id: david.id)
-project1 = Project.create(background_image: "", topic: "Boring Project", user_id: david.id)
-project3 = Project.create(background_image: "", topic: "Job Project", user_id: kim.id)
+project = Project.create(background_image: "", topic: "Fun", user_id: david.id)
+project1 = Project.create(background_image: "", topic: "Boring", user_id: david.id)
+project3 = Project.create(background_image: "", topic: "Job", user_id: kim.id)
 
 board = Board.create(title: "favorite", project_id: project.id)
-board1 = Board.create(title: "I like icons", project_id: project.id)
+board1 = Board.create(title: "Love Icons", project_id: project.id)
 
-board3 = Board.create(title: "Going to do", project_id: project3.id)
+board3 = Board.create(title: "Pre-Jobs", project_id: project3.id)
 
 card = Card.create(card_title: "dogs", image: '', content: "Playing with little dogs are my favorite, dont forget to take out ms. kims dogs every sunday evening.", board_id: board.id)
 card1 = Card.create(card_title: "crawfish", image: '', content: "Go crawfishing when you have time on the weekends.", board_id: board.id)
