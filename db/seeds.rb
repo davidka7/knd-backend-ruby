@@ -21,7 +21,7 @@ project1 = Project.create(background_image: "", topic: "Boring", user_id: david.
 project3 = Project.create(background_image: "", topic: "Job", user_id: kim.id)
 
 board = Board.create(title: "favorite", project_id: project.id)
-board1 = Board.create(title: "Love Icons", project_id: project.id)
+board1 = Board.create(title: "Loved", project_id: project.id)
 
 board3 = Board.create(title: "Pre-Jobs", project_id: project3.id)
 
